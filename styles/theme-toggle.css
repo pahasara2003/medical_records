@@ -1,0 +1,66 @@
+
+
+
+        #theme-change{
+            width:4.2rem;
+            height: 2.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        #ball{
+            width:30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            transition: 0.2s ease-in-out;
+            position: relative;
+            background-color: var(--primary);
+            
+        }
+
+        #theme:checked~#theme-change #ball{
+            transform: translateX(-15px);
+        }
+        
+        #theme:not(:checked)~#theme-change #ball{
+            transform: translateX(15px);
+        }
+
+         #theme:not(:checked)~#theme-change #sun{
+            opacity: 0;
+        }
+
+        #theme:checked~#theme-change #moon{
+            opacity: 0;
+        }
+
+        
+
+        #theme-container{
+            background-color: transparent;
+        }
+
+        .dark  #theme-change{
+            background-color: var(--dark_back);
+        }
+
+        .light #theme-change{
+            background-color: var(--light_fore);
+        }
+
+        .icon{
+            width: 23px;
+            transition: 0.1s ease-out;
+            position: absolute;
+        }
+
+        .icon{
+            fill: var(--dark_text);
+        }

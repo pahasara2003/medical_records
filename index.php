@@ -1,6 +1,6 @@
 <?php
-// login page
-
-echo "Hello";
-
-?>
+session_start();
+// echo $_SESSION[""]
+if(TRUE){
+    header("Location: login.html");
+}

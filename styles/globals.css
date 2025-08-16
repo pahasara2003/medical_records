@@ -1,0 +1,71 @@
+
+*{
+  font-family: 'paragraph';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+ :root {
+  --primary: #008561;
+
+  --dark_back:#2c2638;
+  --dark_fore:#3c364c;
+  --light_back:#fafafa;
+  --light_fore:#e4e5f1;
+
+  --light_text:var(--dark_back);
+  --dark_text:var(--light_fore)
+
+}
+
+@font-face {
+  font-family: 'title';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'paragraph';
+  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+
+.dark{
+  background-color: #3c364c;
+}
+
+.light{
+  background-color: #f2f2f2;
+}
+
+.dark > * {
+  color:var(--dark_text) ;
+  background-color: var(--dark_back);
+
+ }
+
+.light > * {
+    color:var(--light_text);
+    background-color: var(--light_back);
+
+}
+
+.dark .fore{
+    background-color: var(--dark_fore);
+    color:var(--dark_text)
+}
+
+.light .fore{
+  background-color: var(--light_fore);
+  color:var(--light_text)
+
+}
+
+.hyperlink{
+  color:var(--primary);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+       
